@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=\, initial-scale=1.0">
+	<title>자료형</title>
+</head>
+<body>
+	<h1>자료형 예제</h1>
+
+	<script>
+		/*
+		1. 숫자 : number
+		- 정수(1,2,3), 실수(3.14, 1.1) 포함
+		- Infinity(무한), -Infinity(-무한), NaN(Not a Number:숫자가 아님) 포함
+		2. 문자열 : string
+		- 작은 따옴표(''), 큰 따옴표(""), 백틱(``) 안에 있는 모든 문자들
+		- ``dksdp ${변수명}을 이용하여 변수명이 들어간 문자열을 쉽게 생성
+		3. 논리형: boolean
+		- true(참), false(거짓) 두 가지 값만 가짐
+		4. null
+		- 값이 비어있음을 나타냄
+		5. undefined
+		- 초기화하지 않은 변수에 들어가는 값. 값이 정해지지 않음을 나타냄
+		6. bigint
+		- 매우 큰 정수를 다룰 때 사용하는 자료형
+		- 정수 뒤에 접미사 n을 붙임
+		7. symbol(심볼)
+		- 고유하고 변경 불가능한 자료형
+		- 주로 객체의 속성 키로 사용
+		8. object
+		- 배열, 객체, null
+		9. function
+		- 함수
+		*/
+		// number 자료형
+		let num1 = 1;
+		let num2 = 2;
+		let num3 = Infinity;
+		let num4 = NaN;
+
+		// string 자료형
+		let str1 = "안녕";
+		let str2 = '안녕';
+		let str3 = `안녕`;
+		let str4 = `${str3}하세요.<br>`;
+		document.write(str4);
+
+		// boolean 자료형
+		let isEven = true;
+		let isOk = false;
+
+		// null 자료형
+		let sample = null;
+
+		// undefined 자료형
+		let sample2;
+		document.write(`${sample2}<br>`);
+
+		// bigint 자료형
+		let bigNum = 123456768901234567689012345676890n;
+		document.write(`${bigNum}<br>`);
+
+		/*
+		typeof 값
+		- 값의 type을 알려주는 연산자
+		*/
+		document.write(`123의 타입 : ${typeof 123}<br>`);
+		document.write(`123n의 타입 : ${typeof 123n}<br>`);
+		document.write(`null의 타입 : ${typeof null}<br>`);
+		document.write(`undefined의 타입 : ${typeof undefined}<br>`);
+		document.write(`true의 타입 : ${typeof true}<br>`);
+	</script>
+</body>
+</html>
