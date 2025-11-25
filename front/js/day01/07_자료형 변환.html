@@ -29,11 +29,16 @@
 		document.write(`parseInt("1.23") : ${parseInt("1.23")}, ${typeof parseInt("1.23")}<br>`);
 		document.write(`parseInt("1px") : ${parseInt("1px")}, ${typeof parseInt("1px")}<br>`);
 		document.write('<hr>');
-		document.write(`parseInt("1") : ${Number("1")}, ${typeof Number("1")}<br>`);
-		document.write(`parseInt("1.23") : ${Number("1.23")}, ${typeof Number("1.23")}<br>`);
-		document.write(`parseInt("1px") : ${Number("1px")}, ${typeof Number("1px")}<br>`);
+		document.write(`Number("1") : ${Number("1")}, ${typeof Number("1")}<br>`);
+		document.write(`Number("1.23") : ${Number("1.23")}, ${typeof Number("1.23")}<br>`);
+		document.write(`Number("1px") : ${Number("1px")}, ${typeof Number("1px")}<br>`);
 		document.write('<hr>');
-		document.write(`"" + 2 : ${"" + 2}, ${typeof ("" + 2) }<br>`);		
+		// 숫자2를 문자열로 변환(위의 4번 참고)
+		document.write(`"" + 2 : ${"" + 2}, ${typeof ("" + 2) }<br>`);
+		//위 예제에 변수를 활용
+		let num1 = 2;
+		let str1 = "" + num1;
+		document.write(`"" + 2 : ${str1}, ${typeof str1}<br>`);		
 	</script>
 </body>
 </html>
